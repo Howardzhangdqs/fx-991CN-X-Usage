@@ -1,4 +1,4 @@
-# fx-991 CN X 简明使用说明
+# fx-991CN X 简明使用说明
 
 > 本项目是针对全体上海市高中生的一份计算器（fx-991 CN X）使用的简单手册，致力于帮助更多同学更好的压榨手中计算器的功能。
 > 
@@ -21,3 +21,6 @@ $ docsify serve ./docs
 
 ## TODO
 未来可能排版为$\LaTeX$，具体做不做看工期和我心情
+
+## Other 其他
+本项目根目录处放置了一个[模拟器](https://github.com/Howardzhangdqs/fx-991CN-X-Usage/blob/main/fx-991CN%20X%20Emulator19.exe.tar)，**暂时无法确保其安全性**，如需使用请先下载后放入不重要的虚拟机/沙箱中删掉文件的`.tar`后缀名后双击运行
