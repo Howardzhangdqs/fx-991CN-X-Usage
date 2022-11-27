@@ -1,4 +1,4 @@
-- [本文简介&配置](introduction)
+- [本文简介&部署](introduction)
 - [界面介绍](interface)
 - [计算简介](calc)
 - [计算进阶🚀](calc_pro)
@@ -8,4 +8,4 @@
 - [系统进阶🚀](sys_pro)
 - [例题与解析](examples)
 - **Links**
-- [![Github](assets/img/github.svg)本文开源地址](https://github.com/Howardzhangdqs/fx-991CN-X-Usage)
+- [![Github](assets/img/github.svg)GitHub网址](https://github.com/Howardzhangdqs/fx-991CN-X-Usage)
