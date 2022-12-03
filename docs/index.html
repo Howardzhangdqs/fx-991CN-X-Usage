@@ -9,11 +9,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-	
-	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css" />
-	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
+
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<!--link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
 	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/regular.css" />
-	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/solid.css" />
+	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/solid.css" /-->
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
 	<style>
@@ -31,7 +31,7 @@
 			background-color: #000;
 			margin: 0em .2em;
 		}
-		
+
 		.btn {
 			display: inline-block;
 			padding: .1em .3em;
@@ -46,12 +46,62 @@
 			border: #000 solid;
 			margin: 0em .2em;
 		}
+
+		figure figcaption {
+			margin-top: 0;
+			padding: 0 1em;
+			font-size: 0.9em;
+			line-height: 1.5;
+			text-align: center;
+			color: #999;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="app">加载中……请稍后</div>
 	<script>
+		const htmlcode = {};
+
+		htmlcode.entityMap = {
+				escape: {
+					'&': '&amp;',
+					'<': '&lt;',
+					'>': '&gt;',
+					'"': '&quot;',
+					"'": '&apos;',
+				},
+				unescape: {
+					'&amp;': "&",
+					'&apos;': "'",
+					'&gt;': ">",
+					'&lt;': "<",
+					'&quot;': '"',
+					"&#39;": "'",
+				}
+			};
+
+			htmlcode.entityReg = {
+				escape: RegExp('[' + Object.keys(htmlcode.entityMap.escape).join('') + ']', 'g'),
+				unescape: RegExp('(' + Object.keys(htmlcode.entityMap.unescape).join('|') + ')', 'g')
+			};
+
+			htmlcode.encode = (html) => {
+				if (typeof html !== 'string') return ''
+				return html.replace(htmlcode.entityReg.escape, function (match) {
+					return htmlcode.entityMap.escape[match]
+				})
+			};
+
+			htmlcode.decode = (str) => {
+				if (typeof str !== 'string') return ''
+				return str.replace(htmlcode.entityReg.unescape, function (match) {
+					return htmlcode.entityMap.unescape[match]
+				})
+			};
+
+
+
 		window.$docsify = {
 			name: 'fx-991CN X 简明使用说明',
 			repo: '',
@@ -64,7 +114,7 @@
 			coverpage: 'coverpage.md',
 			homepage: 'introduction.md',
 			loadSidebar: 'sidebar.md',
-			//coverpage: true,,
+			//coverpage: true,
 			plugins: [
 				// Restores initial <title>
 				function persistTitle(hook, vm) {
@@ -81,8 +131,30 @@
 							titleElm.textContent = newTitle;
 						});
 					}
+				},
+
+				// btn和badge渲染
+				function btn_badge_render(hook, vm) {
+					hook.beforeEach(function (html) {
+						//console.log(html);
+						let reg_btn = /\#b\ ?(.*?)\#/g;
+						let reg_bad = /\#d\ ?(.*?)\#/g;
+						html = html.replace(reg_btn, "<span class='btn'>$1</span>")
+							.replace(reg_bad, "<span class='badge'>$1</span>");
+
+						//console.log(html);
+						return html;
+					});
 				}
 			],
+			markdown: {
+				renderer: {
+					image: function (url, _a, alt) {
+						console.log(alt);
+						return `<img src="${url}" alt="${alt}">` + (alt == "" ? "" : `<figcaption>${htmlcode.decode(alt)}</figcaption>`);
+					}
+				}
+			}
 		}
 	</script>
 	<!-- Docsify v4 -->

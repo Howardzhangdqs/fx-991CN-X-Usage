@@ -8,7 +8,7 @@
 
 !> 没有fx-991CN X的同学请一定要购买一台，不要买得力的，不要买fx-350，不要买fx-CG50，只能买fx-991CN X！
 
-![Can Can Need](interface.assets/Snipaste_2022-11-27_20-45-48.png)
+![](interface.assets/Snipaste_2022-11-27_20-45-48.png)
 
 为增强观赏效果，绝大多数操作都将会用模拟器代替实机演示。
 
@@ -17,7 +17,7 @@
 
 ## 计算器可见区域组成
 
-![Can Can Need](interface.assets/consists.svg)
+![](interface.assets/consists.svg)
 
 我画这张图主要是因为在用了一年计算器后，我班里一同学突然指着顶上的太阳能板问我这是干啥的，当时我是震惊的。
 
