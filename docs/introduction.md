@@ -40,8 +40,4 @@ $ docsify s ./docs -p 3000
 
 较为稳妥的使用方法：
 
-<div style="text-align:center">
-
 ![](interface.assets/Snipaste_2022-11-30_19-49-57.png)
-
-</div>
