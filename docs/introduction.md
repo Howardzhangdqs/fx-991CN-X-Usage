@@ -31,7 +31,7 @@ $ docsify s ./docs -p 3000
 打开[localhost:3000](http://localhost:3000/)即可阅读
 
 ## TODO
-未来可能排版为$\LaTeX$，具体做不做看工期和我心情
+未来可能排版为$\LaTeX$和pdf发行版，具体做不做看工期和我心情
 
 ## Other 其他
 本项目根目录处放置了一个[电脑端 fx-991CN X 模拟器](https://github.com/Howardzhangdqs/fx-991CN-X-Usage/blob/main/fx-991CN%20X%20Emulator19.exe.tar)
@@ -40,4 +40,4 @@ $ docsify s ./docs -p 3000
 
 较为稳妥的使用方法：
 
-![](interface.assets/Snipaste_2022-11-30_19-49-57.png)
+![](assets/img/Snipaste_2022-11-30_19-49-57.png)
