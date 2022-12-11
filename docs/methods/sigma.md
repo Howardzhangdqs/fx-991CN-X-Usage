@@ -10,3 +10,5 @@ $\Sigma$方法是一个很好用的数列求和工具，用于计算某些看似
 $$
 \textcircled{\scriptsize 1}\sum\limits^{\displaystyle\textcircled{\scriptsize 4}}_{x=\displaystyle\textcircled{\scriptsize 3}}f(\textcircled{\scriptsize 2})\textcircled{\scriptsize 5}
 $$
+
+# 找到好的题目了再来填坑

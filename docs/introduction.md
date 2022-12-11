@@ -41,11 +41,16 @@ $ docsify s -p 3000
 ## TODO
 未来可能排版为$\LaTeX$和pdf发行版，具体做不做看工期和我心情
 
-## Other 其他
-本项目根目录处放置了一个[电脑端 fx-991CN X 模拟器](https://github.com/Howardzhangdqs/fx-991CN-X-Usage/blob/main/fx-991CN%20X%20Emulator19.exe.tar)
+## Emulator 模拟器
+
+可以直接从官网上下载 <https://edu.casio.com/freetrial/zh/download2.php?lang=1&file_no=20140>，可购买许可证或者使用还原软件防止免费试用许可证到期。
+
+或者本项目Release中放置了一个[Windows 电脑端 fx-991CN X 模拟器](https://github.com/Howardzhangdqs/fx-991CN-X-Usage/releases/download/Emulator/fx-991CN.X.Emulator19.exe.tar)
 
 !> **此模拟器为盗版，安全性未知！**如需使用建议下载后放入不重要的虚拟机或沙箱中删掉文件后缀名中的`.tar`后双击运行。如有安全可靠的模拟器破解版欢迎联系。
 
 较为稳妥的使用方法：
 
 ![](assets/img/Snipaste_2022-11-30_19-49-57.png)
+
+!> 以上行为（除购买许可证外）都很不道德！禁止试用！
