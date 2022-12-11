@@ -8,16 +8,24 @@
 
 !> 本文仅摘录对于学习用途使用计算器有用的方法，不会接受如卡花屏、卡119模式等的操作方法。但会摘录部分对于解除花屏有效的行为。
 
+## 我个人对使用计算器的一些看法
+
+我周围一些同学有很多存在抵制使用计算器直接硬解题目的，担心计算器会让自己堕落。不容否认这种担心并不是多余的，比如我自己在三角函数学习期间过度依赖计算器的算力硬解题目以至于基础的知识点都没能很好的掌握。
+
+我认为最好的计算器使用状态应该是只在考试等赶时间的情况下硬解，其他时间只用于算数的工具。
+
 ## 本项目中的书写格式
 
 ### 操作表示
-按下按键XXX：<span class="btn">XXX</span>
+按下按键XXX：#bXXX#
 
-同时按下按键XXX与YYY：<span class="btn">XXX</span>+<span class="btn">YYY</span>
+同时按下按键XXX与YYY：#bXXX#+#bYYY#
 
-顺次按下按键XXX与YYY：<span class="btn">XXX</span><span class="btn">YYY</span> 或 <span class="btn">XXX</span>、<span class="btn">YYY</span>
+顺次按下按键XXX与YYY：#bXXX##bYYY# 或 #bXXX#、#bYYY#
 
-## Quick Start 快速部署
+## Quick Start
+
+如何快速部署本文
 
 ?> 请确保您所使用的设备中已配置好可用的`Node.js`、`npm`与`git`
 
@@ -25,7 +33,7 @@
 $ npm i docsify-cli -g
 $ git clone git@github.com:Howardzhangdqs/fx-991CN-X-Usage.git
 $ cd fx-991CN-X-Usage
-$ docsify s ./docs -p 3000
+$ docsify s -p 3000
 ```
 
 打开[localhost:3000](http://localhost:3000/)即可阅读

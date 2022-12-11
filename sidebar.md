@@ -4,6 +4,7 @@
 - [计算简介](docs/methods/calc.md)
 - - [CLAC方法](docs/methods/calc.md)
 - - [SOLVE方法](docs/methods/solve.md)
+- - [Sigma方法](docs/methods/sigma.md)
 - [计算进阶🚀](docs/calc_pro)
 - [模式简介](docs/mod)
 - [模式进阶🚀](docs/mod_pro)
