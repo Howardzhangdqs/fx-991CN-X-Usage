@@ -1,0 +1,23 @@
+{
+  "name": "fx-991cn-x-usage",
+  "version": "1.0.0",
+  "description": "> 本项目是针对全体上海市高中生的一份计算器（fx-991 CN X）使用的简单手册，致力于帮助更多同学更好的压榨手中计算器的功能。 >  > 如果各位有其他的hack方法欢迎提交issue或Pull Request。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "docsify s -p 3000",
+    "compress": "cd assets/js && del /F bundle.min.js && uglifyjs *.js -o bundle.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Howardzhangdqs/fx-991CN-X-Usage.git"
+  },
+  "author": "HowardZhangdqs",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Howardzhangdqs/fx-991CN-X-Usage/issues"
+  },
+  "homepage": "https://github.com/Howardzhangdqs/fx-991CN-X-Usage#readme"
+}

@@ -13,4 +13,4 @@
 
 方便起见，我们称$a$除$m$的余数为$a$对$m$取模。
 
-若 $a\equiv 0{\pmod m}$，即$a$能整除$m$，则记作$\middle|$
+若 $a\equiv 0{\pmod m}$，即$a$能被$m$整除，则记作$\left. m \middle| a \right.$
