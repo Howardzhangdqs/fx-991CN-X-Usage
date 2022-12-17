@@ -39,9 +39,10 @@ $ docsify s -p 3000
 打开[localhost:3000](http://localhost:3000/)即可阅读
 
 ## TODO
-未来可能排版为$\LaTeX$和pdf发行版，具体做不做看工期和我心情
+1. 写完
 
-## 
+2. 未来可能排版为$\LaTeX$和pdf发行版，具体做不做看工期和我心情
+
 ## Emulator 模拟器
 
 可以直接从官网上下载 <https://edu.casio.com/freetrial/zh/download2.php?lang=1&file_no=20140>，可购买许可证或者使用还原软件防止免费试用许可证到期。
