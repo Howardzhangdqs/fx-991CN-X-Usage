@@ -1,6 +1,8 @@
 - [本文简介&部署](docs/introduction)
 - [计算器概述](docs/overview)
 - [界面介绍](docs/interface)
+- [基础操作](docs/operate)
+- - [存储器](docs/operate/save.md)
 - [计算简介](docs/methods.md)
 - - [CLAC方法](docs/methods/calc.md)
 - - [SOLVE方法](docs/methods/solve.md)

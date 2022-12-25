@@ -25,3 +25,5 @@
 求余，日常计算中不太常用，就不放了。
 
 快速解决形如 $a^b$除$c$的余数 的问题可参考 [计算进阶 > 同余定理](docs/pro/mod.md)
+
+#s[:fa fa-github:HowardZhangdqs](https://github.com/Howardzhangdqs)#

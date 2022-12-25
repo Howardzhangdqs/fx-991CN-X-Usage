@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "docsify s -p 3000",
-    "compress": "cd assets/js && del /F bundle.min.js && uglifyjs *.js -o bundle.min.js"
+    "compress": "npm run complie && cd assets/js && del /F bundle.min.js && tsc && uglifyjs custom.js *.js -o bundle.min.js && node -e console.log(\\\"\\x1B[32mcompressed\\x1B[39m\\\")",
+    "complie": "cd assets/js && tsc && node -e console.log(\\\"\\x1B[32mcompiled\\x1B[39m\\\")"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Howardzhangdqs/fx-991CN-X-Usage/issues"
   },
-  "homepage": "https://github.com/Howardzhangdqs/fx-991CN-X-Usage#readme"
+  "homepage": "https://fx991cn.netlify.app/",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
 }

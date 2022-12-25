@@ -84,3 +84,5 @@ $$
 \end{aligned}
 $$
 所以答案就为$4$（如果拿二项式定理有的好算算的了DOGE
+
+#s[:fa fa-github:HowardZhangdqs](https://github.com/Howardzhangdqs)#
