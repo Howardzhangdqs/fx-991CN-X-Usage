@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "docsify s -p 3000",
-    "compress": "npm run complie && cd assets/js && del /F bundle.min.js && uglifyjs ../src/custom.js ../src/*.js -c --source-map url='./bundle.min.js.map' -o bundle.min.js && node -e console.log(\\\"\\x1B[32mcompressed\\x1B[39m\\\")",
+    "compress": "npm run complie && cd assets/js && del /F bundle.min.js && uglifyjs ../src/custom.js ../src/*.js -c --source-map url='./bundle.min.js.map' -o ../js/bundle.min.js && cd ../node && node changepath.js",
     "complie": "cd assets/src && tsc && node -e console.log(\\\"\\x1B[32mcompiled\\x1B[39m\\\")"
   },
   "repository": {
