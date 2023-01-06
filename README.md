@@ -10,9 +10,9 @@
 ## Quick Start 快速部署
 ```bash
 $ npm i docsify-cli -g
-$ git clone git@github.com:Howardzhangdqs/fx-991CN-X-Usage.git
+$ git clone https://github.com/Howardzhangdqs/fx-991CN-X-Usage.git
 $ cd fx-991CN-X-Usage
-$ docsify serve ./docs
+$ npm run start
 ```
 
 请确保您所使用的设备中已配置好可用的`Node.js`、`npm`与`git`
