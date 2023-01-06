@@ -9,7 +9,7 @@
 - - [Sigma方法](docs/methods/sigma.md)
 - - [÷R方法](docs/methods/mod.md)
 - - [杂项](docs/methods/other.md)
-- [计算进阶🚀](docs/calc_pro)
+- [计算进阶🚀](docs/calc_pro.md)
 - - [同余定理](docs/pro/mod.md)
 - [模式简介](docs/mod)
 - [模式进阶🚀](docs/mod_pro)

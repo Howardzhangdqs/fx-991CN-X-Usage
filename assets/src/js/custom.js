@@ -13,7 +13,7 @@ window.$docsify = Object.assign({
     markdown: {
         renderer: {
             image: function (url, _a, alt) {
-                return `<div style="text-align:center"><img src="${url}" alt="${alt}">` +
+                return `<div style="text-align:center"><img src="${url}" alt="${alt}" style="width: 100%">` +
                     ("" == alt ? "" : `<figcaption>${htmlcode.decode(alt)}</figcaption>`) +
                     "</div>"
             }
