@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "ES6",
+		"skipLibCheck": true,
+		"strict": false,
+		"target": "ES6",
+		"allowJs": true,
+		"checkJs": false,
+		"outDir": "assets/dist"
+	},
+	"include": [
+		"assets/src/js/**/*"
+	]
+}

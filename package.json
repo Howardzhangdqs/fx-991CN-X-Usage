@@ -1,15 +1,14 @@
 {
   "name": "fx-991cn-x-usage",
   "version": "1.0.0",
-  "description": "> 本项目是针对全体上海市高中生的一份计算器（fx-991 CN X）使用的简单手册，致力于帮助更多同学更好的压榨手中计算器的功能。 >  > 如果各位有其他的hack方法欢迎提交issue或Pull Request。",
-  "main": "index.js",
+  "description": "> 本项目是针对全体上海市高中生的一份计算器（fx-991 CN X）使用的简单手册，致力于帮助更多同学更好的压榨手中计算器的功能。如果各位有其他的hack方法欢迎提交issue或Pull Request。",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "start": "docsify s -p 3000",
-    "compress": "npm run complie && cd assets/js && del /F bundle.min.js && uglifyjs ../src/custom.js ../src/*.js -c --source-map url='./bundle.min.js.map' -o ../js/bundle.min.js && cd ../node && node changepath.js",
-    "complie": "cd assets/src && tsc && node -e console.log(\\\"\\x1B[32mcompiled\\x1B[39m\\\")"
+    "compress": "npm run complie && html-minifier --collapse-whitespace --remove-comments --remove-tag-whitespace --minify-css true --minify-js true assets/src/html/index.html -o index.html && cd assets/js && uglifyjs ../dist/*.js -c --source-map url='./bundle.min.js.map' -o bundle.min.js && cd ../node && node changepath.js",
+    "complie": "tsc && node -e console.log(\\\"\\x1B[32mcompiled\\x1B[39m\\\")"
   },
   "repository": {
     "type": "git",
@@ -22,6 +21,7 @@
   },
   "homepage": "https://fx991cn.netlify.app/",
   "dependencies": {
+    "html-minifier": "^4.0.0",
     "typescript": "^4.9.4"
   }
 }
