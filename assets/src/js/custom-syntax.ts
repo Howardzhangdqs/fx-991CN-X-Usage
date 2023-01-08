@@ -27,6 +27,7 @@
 				let config = {
 					"<span class='btn'>$1</span>": /\#b\ ?(.*?)\#/g,
 					"<span class='badge'>$1</span>": /\#d\ ?(.*?)\#/g,
+					"<img src='$1' class='inline-img' alt='$1'/>": /\#i\ ?(.*?)\#/g,
 					"---\n**本章主笔**：$1": /\#s\ ?(.*?)\#/g,
 				};
 				hook.beforeEach((html: string): string => {

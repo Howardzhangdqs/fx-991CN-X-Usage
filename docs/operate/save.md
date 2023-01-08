@@ -14,5 +14,13 @@
 
 比如要将变量$x$赋值为$9$
 
+1. 按一下#b9#
+![](assets/img/Snipaste_2023-01-06_17-59-48.png)
+
+1. 按一下上半键盘左下角的#bSTO#
+![](assets/img/Snipaste_2023-01-06_18-00-44.png)
+此时你可能注意到了显示屏上左上角多了一个形如#iassets/img/STO.png#的符号
+
+
 
 #s[:fa fa-github:HowardZhangdqs](https://github.com/Howardzhangdqs)#

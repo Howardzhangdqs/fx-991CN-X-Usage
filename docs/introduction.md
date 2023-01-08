@@ -23,22 +23,22 @@
 
 顺次按下按键XXX与YYY：#bXXX##bYYY# 或 #bXXX#、#bYYY#
 
-## Quick Start
-
-快速部署本文
+## Quick Start 快速部署
 
 `Windows`、`Linux`、`MacOS`三操作系统通用。
 
 ### 使用`http-server`部署静态页面
 
-?> 请确保您所使用的设备中已配置好可用的`npx`
+?> 请确保您所使用的设备中已配置好可用的`npm`和`npx`
 
 ```bash
 $ git clone https://github.com/Howardzhangdqs/fx-991CN-X-Usage.git
 $ cd fx-991CN-X-Usage
-$ npx http-server -p 3000 .
+$ npm run server
 ```
 打开[localhost:3000](http://localhost:3000/)即可阅读
+
+此过程会运行`npx http-server -p 3000 .`，将`http-server`下载到`node_cache`中，无需预先安装依赖。首次运行会自动下载依赖，故需要稍等片刻。
 
 ### 使用`docsify-cli`的即时刷新功能
 
@@ -60,16 +60,22 @@ $ npm start
 $ git clone https://github.com/Howardzhangdqs/fx-991CN-X-Usage.git
 $ cd fx-991CN-X-Usage
 $ npm i
+$ npm run compile
 $ npm run compress
 ```
 
-运行`npm run compress`将会创建一个`assets/dist`目录，其中包含所需的全部`js`文件与编译好的`ts`文件。
+运行`npm run compile`将会在`assets`目录下创建一个`dist`目录，其中包含所需的全部`js`文件与编译好的`ts`文件。
 
-| `npm`命令 | 作用 |
+### `npm`命令对照表
+
+| `npm`命令 | 用途 |
 | :--: | :--: |
 | `start` | 调用`docsify s -p 3000`，使用`docsify-cli`的即时刷新功能 |
-| `compile` | 调用`tsc`，以当前目录下的`tsconfig.json`作为配置文件进行编译 |
-| `compress` | 先调用`npm run compile`编译`ts`文件，后将`assets/src/js`下的所有`js`文件压缩为`assets/js/`下的`bundle.min.js` |
+| `server` | 调用`npx http-server -p 3000 .`开启本地静态页面服务 |
+| `build` | 压缩`HTML`文件、编译`TypeScript`、并打包（顺次调用`compress_html`、`compile`、`compress`命令） |
+| `compile` | 调用`tsc`，根目录下的`tsconfig.json`作为配置文件对`TypeScript`进行编译 |
+| `compress_html` | 调用`html-minifier`，将`assets/src/html/index.html`压缩为根目录下的`index.html` |
+| `compress` | 调用`uglify-js`，将`assets/dist`下的所有文件合并、压缩为`assets/js/bundle.min.js`，并生成`sourceMap`文件 |
 
 ## TODO
 1. 写完

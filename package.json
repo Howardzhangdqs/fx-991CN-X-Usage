@@ -7,8 +7,11 @@
   },
   "scripts": {
     "start": "docsify s -p 3000",
-    "compress": "npm run complie && html-minifier --collapse-whitespace --remove-comments --remove-tag-whitespace --minify-css true --minify-js true assets/src/html/index.html -o index.html && cd assets/js && uglifyjs ../dist/*.js -c --source-map url='./bundle.min.js.map' -o bundle.min.js && cd ../node && node changepath.js",
-    "complie": "tsc && node -e console.log(\\\"\\x1B[32mcompiled\\x1B[39m\\\")"
+    "server": "npx http-server -p 3000 .",
+    "build": "node assets/node/command_build.js",
+    "compress_html": "node assets/node/command_compress_html.js",
+    "compress": "node assets/node/command_compress.js",
+    "compile": "node assets/node/command_compile.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://fx991cn.netlify.app/",
   "dependencies": {
+    "chalk": "^4.1.2",
     "html-minifier": "^4.0.0",
     "typescript": "^4.9.4",
     "uglify-js": "^3.17.4"

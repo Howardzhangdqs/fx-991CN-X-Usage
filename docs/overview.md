@@ -22,3 +22,7 @@
 我画这张图主要是因为在用了一年计算器后，我班里一同学突然指着顶上的太阳能板问我这是干啥的，当时我是震惊的。
 
 计算器主要日常供电使用的是电池，只有在电池不够时或太阳能较好时才会使用太阳能供电。太阳能供电时计算器液晶显示屏右上角会有一个太阳:fa fa-sun-o:的标志
+
+## 计算器官方说明书
+
+CDN链接：[official_instructions.pdf](https://fx991cn.netlify.app/official_instructions.pdf)<br>官网链接：[fx-991CN_X_B_CN.pdf](https://support.casio.com/storage/cn/manual/pdf/CN/004/fx-991CN_X_B_CN.pdf)
