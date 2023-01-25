@@ -23,6 +23,33 @@
 
 顺次按下按键XXX与YYY：#bXXX##bYYY# 或 #bXXX#、#bYYY#
 
+## 浏览器兼容性问题
+
+### 图像渲染
+
+本项目中部分图像使用超低分辨率配合`Pixelated`图像渲染模式（如下图）
+
+![测试图 (低分辨率)](assets/img/test.png)
+
+上图渲染效果应该如下：
+
+![效果图 (高分辨率)](assets/img/test2.png)
+
+如果出现下图渲染效果则为了保证阅读质量建议更换浏览器。
+
+<div style="text-align:center">
+<img src="assets/img/test.png" alt="不兼容的渲染结果" style="width: 100%; image-rendering: auto;" class="medium-zoom-image">
+<figcaption>关闭<code>Pixelated</code>渲染模式 (低分辨率)</figcaption>
+</div>
+
+### JavaScript
+
+本项目暂未使用Bable或者Corejs对低版本浏览器进行兼容，故会有Js脚本的浏览器兼容性问题，如果页面中出现乱码、文件源码、代码等则为了保证阅读质量请更换浏览器。
+
+如有大佬能帮忙重写编译、打包等代码并提交PR我们将不胜感激
+
+!> 以下内容供有一定基础的同学借鉴使用
+
 ## Quick Start 快速部署
 
 `Windows`、`Linux`、`MacOS`三操作系统通用。
@@ -92,6 +119,6 @@ $ npm run compress
 
 较为稳妥的使用方法：
 
-![](./assets/img/Snipaste_2022-11-30_19-49-57.png)
+![_p](./assets/img/Snipaste_2022-11-30_19-49-57.png)
 
 !> 以上行为（除购买许可证外）都很不道德！强烈谴责（除我外）所有使用盗版软件的法外狂徒！禁止试用！
