@@ -52,13 +52,17 @@
 			color: #999;
 		}
 
-		img {
+		img.inline-img {
+			vertical-align: middle;
+			height: 1em;
+		}
+
+		img.pix {
 			image-rendering: pixelated;
 		}
 
-		img.inline-img {
-			vertical-align: middle;
-			height: 1em
+		img.wide {
+			width: 100%;
 		}
 	</style>
 </head>
@@ -76,6 +80,8 @@
 	<script src="https://cdn.staticfile.org/docsify/4.13.0/plugins/zoom-image.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"></script>
 	<script src="https://cdn.staticfile.org/echarts/5.4.0/echarts.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest"></script>
+	<script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
 	<!--script src="https://cdn.staticfile.org/docsify/4.13.0/plugins/search.min.js"></script-->
 
@@ -83,9 +89,6 @@
 	<script src="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.js"></script>
 	<script src="https://cdn.staticfile.org/marked/3.0.8/marked.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/docsify-katex@2.0.2/dist/docsify-katex.js"></script>
-
-	<!-- fontawesome支持 -->
-	<!--script src="https://unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script-->
 </body>
 
 </html>
