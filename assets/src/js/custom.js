@@ -7,6 +7,7 @@ window.$docsify = Object.assign({
         noData: "找不到结果",
         depth: 3
     },
+    sidebarDisplayLevel: 2,
     coverpage: "coverpage.md",
     homepage: "./docs/introduction.md",
     loadSidebar: "sidebar.md",
@@ -18,7 +19,7 @@ window.$docsify = Object.assign({
                     "</div>"
             }
         }
-    }
+    },
 },
     window.$docsify
 );
