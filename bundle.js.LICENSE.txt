@@ -1,0 +1,7 @@
+/*!
+ * docsify-copy-code
+ * v2.1.1
+ * https://github.com/jperasmus/docsify-copy-code
+ * (c) 2017-2020 JP Erasmus <jperasmus11@gmail.com>
+ * MIT license
+ */

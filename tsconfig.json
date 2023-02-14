@@ -8,9 +8,5 @@
 		"target": "ES6",
 		"allowJs": true,
 		"checkJs": false,
-		// "outDir": "assets/dist"
-	},
-	"include": [
-		"assets/src/js/**/*"
-	]
+	}
 }

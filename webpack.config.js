@@ -1,16 +1,16 @@
-const path = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require("webpack");
+const path                 = require("path");
+const HtmlWebpackPlugin    = require('html-webpack-plugin');
+const webpack              = require("webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    entry: './assets/src/js/entry.js',
+    entry: './src/entry.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname)
     },
     module: {
         rules: [
-
             {
                 test: /.[jt]s$/,
                 use: [
@@ -23,7 +23,7 @@ module.exports = {
                                     {
                                         targets: {
                                             chrome: "58",
-                                            ie: "7",
+                                            // ie: "7",
                                         },
                                         corejs: "3",
                                         useBuiltIns: "usage",
@@ -38,13 +38,24 @@ module.exports = {
                 ],
                 exclude: /node_modules/,
             },
+            {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
+            },
         ]
     },
     resolve: {
-        extensions: [".ts", ".js"]
+        extensions: [".ts", ".js", ".css"]
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: "./assets/src/html/index.html" }),
-        // new webpack.SourceMapDevToolPlugin()
-    ]
+        new HtmlWebpackPlugin({
+            template: "./src/html/index.html",
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new MiniCssExtractPlugin()
+    ],
+    watch: true,
 };

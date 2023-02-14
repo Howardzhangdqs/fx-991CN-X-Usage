@@ -9,7 +9,7 @@
     "start": "docsify s -p 3000",
     "server": "npx http-server -p 3000 .",
     "dev": "webpack --mode=development",
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -27,8 +27,10 @@
     "babel-loader": "^9.1.2",
     "chalk": "^4.1.2",
     "core-js": "^3.27.2",
+    "css-loader": "^6.7.3",
     "html-minifier": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.4",
     "webpack": "^5.75.0",

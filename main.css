@@ -1,0 +1,51 @@
+.badge {
+    display: inline-block;
+    padding: .1em .3em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: #000;
+    margin: 0em .2em;
+}
+
+.btn {
+    display: inline-block;
+    padding: .1em .3em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    border: #000 solid;
+    margin: 0em .2em;
+}
+
+figure figcaption {
+    margin-top: 0;
+    padding: 0 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+    text-align: center;
+    color: #999;
+}
+
+img.inline-img {
+    vertical-align: middle;
+    height: 1em;
+}
+
+img.pix {
+    image-rendering: pixelated;
+}
+
+img.wide {
+    width: 100%;
+}

@@ -15,6 +15,7 @@
 - [模式简介](docs/mod)
 - [模式进阶🚀](docs/mod_pro)
 - [系统简介](docs/sys)
+  - [计算精度](docs/sys/acc.md)
 - [系统进阶🚀](docs/sys_pro)
 - [例题与解析](docs/examples)
 - **Links**
